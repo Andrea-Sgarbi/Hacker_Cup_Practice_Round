@@ -523,29 +523,29 @@ Meta_Hacker_Cup/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/build
 .PHONY : Meta_Hacker_Cup/fast
 
-A1.o: A1.cpp.o
-.PHONY : A1.o
+A2.o: A2.cpp.o
+.PHONY : A2.o
 
 # target to build an object file
-A1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o
-.PHONY : A1.cpp.o
+A2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o
+.PHONY : A2.cpp.o
 
-A1.i: A1.cpp.i
-.PHONY : A1.i
+A2.i: A2.cpp.i
+.PHONY : A2.i
 
 # target to preprocess a source file
-A1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.i
-.PHONY : A1.cpp.i
+A2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.i
+.PHONY : A2.cpp.i
 
-A1.s: A1.cpp.s
-.PHONY : A1.s
+A2.s: A2.cpp.s
+.PHONY : A2.s
 
 # target to generate assembly for a file
-A1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.s
-.PHONY : A1.cpp.s
+A2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.s
+.PHONY : A2.cpp.s
 
 # Help Target
 help:
@@ -587,9 +587,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... Meta_Hacker_Cup"
-	@echo "... A1.o"
-	@echo "... A1.i"
-	@echo "... A1.s"
+	@echo "... A2.o"
+	@echo "... A2.i"
+	@echo "... A2.s"
 .PHONY : help
 
 

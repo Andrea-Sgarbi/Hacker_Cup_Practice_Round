@@ -69,28 +69,28 @@ include CMakeFiles/Meta_Hacker_Cup.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Meta_Hacker_Cup.dir/flags.make
 
-CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o: CMakeFiles/Meta_Hacker_Cup.dir/flags.make
-CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o: /Users/andrea/VSCode\ Projects/Hacker_Cup_Practice_Round/A1.cpp
-CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o: CMakeFiles/Meta_Hacker_Cup.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o -MF CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o.d -o CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o -c "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/A1.cpp"
+CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o: CMakeFiles/Meta_Hacker_Cup.dir/flags.make
+CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o: /Users/andrea/VSCode\ Projects/Hacker_Cup_Practice_Round/A2.cpp
+CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o: CMakeFiles/Meta_Hacker_Cup.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o -MF CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o.d -o CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o -c "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/A2.cpp"
 
-CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/A1.cpp" > CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.i
+CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/A2.cpp" > CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.i
 
-CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/A1.cpp" -o CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.s
+CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/A2.cpp" -o CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.s
 
 # Object files for target Meta_Hacker_Cup
 Meta_Hacker_Cup_OBJECTS = \
-"CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o"
+"CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o"
 
 # External object files for target Meta_Hacker_Cup
 Meta_Hacker_Cup_EXTERNAL_OBJECTS =
 
-Meta_Hacker_Cup: CMakeFiles/Meta_Hacker_Cup.dir/A1.cpp.o
+Meta_Hacker_Cup: CMakeFiles/Meta_Hacker_Cup.dir/A2.cpp.o
 Meta_Hacker_Cup: CMakeFiles/Meta_Hacker_Cup.dir/build.make
 Meta_Hacker_Cup: CMakeFiles/Meta_Hacker_Cup.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Meta_Hacker_Cup"
