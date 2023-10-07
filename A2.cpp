@@ -14,6 +14,7 @@ int main()
     long k_decker;
     long bread = 0;
     long hamburger = 0;
+    // long mcm = 0;
 
     double unit_cost_1, unit_cost_2;
 
@@ -29,38 +30,80 @@ int main()
         unit_cost_1 = (double)cost_1 / 3;
         unit_cost_2 = (double)cost_2 / 4;
 
-        cout << "case: " << i << endl;
-        cout << "unit_cost_1: " << unit_cost_1 << endl;
-        cout << "unit_cost_2: " << unit_cost_2 << endl;
+        /* 4 possible solutions */
+        long k_decker_1 = 0, k_decker_2 = 0, k_decker_3 = 0, k_decker_4 = 0;
+        long budget_aux = 0;
 
-        if (unit_cost_2 <= unit_cost_1)
+        // First possible solution: 0 singles
+        k_decker_1 = (budget_k_decker / cost_2) * 2 - 1;
+
+        // Second possible solution: 1 singles
+        hamburger = 0;
+        bread = 0;
+
+        budget_aux = budget_k_decker - cost_1;
+        hamburger += 1;
+        bread += 2;
+        if (budget_aux >= 0)
         {
-            hamburger = (budget_k_decker / cost_2) * 2;
-            bread = (budget_k_decker / cost_2) * 2;
-
-            budget_k_decker = budget_k_decker % cost_2;
-
-            hamburger += budget_k_decker / cost_1;
-            bread += (budget_k_decker / cost_1) * 2;
-
-            k_decker = bread - 1;
+            bread += (budget_aux / cost_2) * 2;
+            hamburger += (budget_aux / cost_2) * 2;
+            k_decker_2 = bread - 1;
         }
         else
         {
-
-            hamburger = budget_k_decker / cost_1;
-            bread = (budget_k_decker / cost_1) * 2;
-
-            budget_k_decker = budget_k_decker % cost_1;
-
-            hamburger += (budget_k_decker / cost_2) * 2;
-            bread += (budget_k_decker / cost_2) * 2;
-
-            k_decker = hamburger;
+            k_decker_2 = 0;
         }
 
-        if (k_decker < 0)
-            k_decker = 0;
+        // Third possible solution: 1 singles
+        hamburger = 0;
+        bread = 0;
+
+        budget_aux = budget_k_decker - 2 * cost_1;
+        hamburger += 2;
+        bread += 4;
+        if (budget_aux >= 0)
+        {
+            bread += (budget_aux / cost_2) * 2;
+            hamburger += (budget_aux / cost_2) * 2;
+            if (bread - 1 > hamburger)
+                k_decker_3 = hamburger;
+            else
+                k_decker_3 = bread - 1;
+        }
+        else
+        {
+            k_decker_3 = 0;
+        }
+
+        // Fourth possible solution: 1 singles
+        hamburger = 0;
+        bread = 0;
+
+        budget_aux = budget_k_decker % cost_1;
+        hamburger += (budget_k_decker / cost_1);
+        bread += (budget_k_decker / cost_1) * 2;
+
+        bread += (budget_aux / cost_2) * 2;
+        hamburger += (budget_aux / cost_2) * 2;
+        if (bread - 1 > hamburger)
+            k_decker_4 = hamburger;
+        else
+            k_decker_4 = bread - 1;
+
+        k_decker = 0;
+
+        if (k_decker < k_decker_1)
+            k_decker = k_decker_1;
+
+        if (k_decker < k_decker_2)
+            k_decker = k_decker_2;
+
+        if (k_decker < k_decker_3)
+            k_decker = k_decker_3;
+
+        if (k_decker < k_decker_4)
+            k_decker = k_decker_4;
 
         fout << "Case #" << i + 1 << ": "
              << k_decker << endl;
