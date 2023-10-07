@@ -38,7 +38,7 @@ int main()
             hamburger = (budget_k_decker / cost_2) * 2;
             bread = (budget_k_decker / cost_2) * 2;
 
-            budget_k_decker = budget_k_decker % 2;
+            budget_k_decker = budget_k_decker % cost_2;
 
             hamburger += budget_k_decker / cost_1;
             bread += (budget_k_decker / cost_1) * 2;
@@ -47,10 +47,11 @@ int main()
         }
         else
         {
+
             hamburger = budget_k_decker / cost_1;
             bread = (budget_k_decker / cost_1) * 2;
 
-            budget_k_decker = budget_k_decker % 2;
+            budget_k_decker = budget_k_decker % cost_1;
 
             hamburger += (budget_k_decker / cost_2) * 2;
             bread += (budget_k_decker / cost_2) * 2;
