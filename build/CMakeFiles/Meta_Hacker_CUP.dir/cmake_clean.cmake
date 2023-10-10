@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Meta_Hacker_Cup.dir/B.cpp.o"
-  "CMakeFiles/Meta_Hacker_Cup.dir/B.cpp.o.d"
+  "CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.o"
+  "CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.o.d"
   "Meta_Hacker_Cup"
   "Meta_Hacker_Cup.pdb"
 )

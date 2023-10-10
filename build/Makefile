@@ -523,29 +523,29 @@ Meta_Hacker_Cup/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/build
 .PHONY : Meta_Hacker_Cup/fast
 
-B.o: B.cpp.o
-.PHONY : B.o
+C.o: C.cpp.o
+.PHONY : C.o
 
 # target to build an object file
-B.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/B.cpp.o
-.PHONY : B.cpp.o
+C.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.o
+.PHONY : C.cpp.o
 
-B.i: B.cpp.i
-.PHONY : B.i
+C.i: C.cpp.i
+.PHONY : C.i
 
 # target to preprocess a source file
-B.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/B.cpp.i
-.PHONY : B.cpp.i
+C.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.i
+.PHONY : C.cpp.i
 
-B.s: B.cpp.s
-.PHONY : B.s
+C.s: C.cpp.s
+.PHONY : C.s
 
 # target to generate assembly for a file
-B.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/B.cpp.s
-.PHONY : B.cpp.s
+C.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Meta_Hacker_Cup.dir/build.make CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.s
+.PHONY : C.cpp.s
 
 # Help Target
 help:
@@ -587,9 +587,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... Meta_Hacker_Cup"
-	@echo "... B.o"
-	@echo "... B.i"
-	@echo "... B.s"
+	@echo "... C.o"
+	@echo "... C.i"
+	@echo "... C.s"
 .PHONY : help
 
 

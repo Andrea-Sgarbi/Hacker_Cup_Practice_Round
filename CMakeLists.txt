@@ -16,7 +16,7 @@ include(CPack)
 # invoked and put all files that match the pattern in the variables
 # 'sources' and 'data'
 file(GLOB_RECURSE sources src/*.cpp)
-file(GLOB_RECURSE main B.cpp)
+file(GLOB_RECURSE main C.cpp)
 include_directories("${CMAKE_SOURCE_DIR}/src")
 
 # you can use set(source src/main.cpp) etc if you don't want to
