@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Darwin-clang++"
-	BuildStamp="20231007-1315-Experimental"
+	BuildStamp="20231010-1750-Experimental"
 	Name="iPro-di-Andrea.wind3.hub"
 	Generator="ctest-3.24.4"
 	CompilerName="/usr/bin/clang++"
@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="3600"
 	>
 	<Testing>
-		<StartDateTime>Oct 07 17:46 CEST</StartDateTime>
-		<StartTestTime>1696693588</StartTestTime>
+		<StartDateTime>Oct 10 19:50 CEST</StartDateTime>
+		<StartTestTime>1696960212</StartTestTime>
 		<TestList/>
-		<EndDateTime>Oct 07 17:46 CEST</EndDateTime>
-		<EndTestTime>1696693588</EndTestTime>
+		<EndDateTime>Oct 10 19:50 CEST</EndDateTime>
+		<EndTestTime>1696960212</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
