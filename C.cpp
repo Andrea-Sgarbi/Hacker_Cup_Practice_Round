@@ -37,8 +37,6 @@ int main()
 
         if (A.size() == 1)
         {
-            cout << "CASE 1" << endl;
-            cout << A[left] << '\n';
             fout << A[left] << '\n';
             break;
         }
@@ -49,7 +47,6 @@ int main()
         {
             if (count > 1)
             {
-                cout << "CASE 2" << endl;
                 fout << -1 << '\n';
                 break;
             }
