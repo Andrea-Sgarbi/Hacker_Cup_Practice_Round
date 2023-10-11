@@ -1,12 +1,7 @@
-Case #1: -1
-7
-Case #2: -1
-8
-Case #3: -1
-9
+Case #1: 4
+Case #2: 7
+Case #3: 1
 Case #4: -1
-1000000001
-Case #5: -1
-999999994
-Case #6: 0
-Case #7: 0
+Case #5: 6
+Case #6: -1
+Case #7: 1000000002
