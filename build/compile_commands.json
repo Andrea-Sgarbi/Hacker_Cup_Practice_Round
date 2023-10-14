@@ -1,7 +1,7 @@
 [
 {
   "directory": "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/build",
-  "command": "/usr/bin/clang++  -I\"/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/src\" -I\"/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -std=c++1y -Wall -Wfloat-conversion -o CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.o -c \"/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/C.cpp\"",
-  "file": "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/C.cpp"
+  "command": "/usr/bin/clang++  -I\"/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/src\" -I\"/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/include\" -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -std=c++1y -Wall -Wfloat-conversion -o CMakeFiles/Meta_Hacker_Cup.dir/D.cpp.o -c \"/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/D.cpp\"",
+  "file": "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/D.cpp"
 }
 ]

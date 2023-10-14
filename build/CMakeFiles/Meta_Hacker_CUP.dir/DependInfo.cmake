@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/C.cpp" "CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.o" "gcc" "CMakeFiles/Meta_Hacker_Cup.dir/C.cpp.o.d"
+  "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/D.cpp" "CMakeFiles/Meta_Hacker_Cup.dir/D.cpp.o" "gcc" "CMakeFiles/Meta_Hacker_Cup.dir/D.cpp.o.d"
   )
 
 # Targets to which this target links.
