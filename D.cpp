@@ -40,8 +40,8 @@ int main()
 
     int cases;
 
-    ifstream fin("../src/D/sample_input.txt");
-    ofstream fout("../src/D/sample_output.txt", ios::trunc);
+    ifstream fin("src/D/sample_input.txt");
+    ofstream fout("src/D/sample_output.txt", ios::trunc);
 
     fin >> cases;
 
