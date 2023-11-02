@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-clang++"
+	BuildStamp="20231029-1111-Experimental"
+	Name="iPro-di-Andrea.wind3.hub"
+	Generator="ctest-3.24.4"
+	CompilerName="/usr/bin/clang++"
+	CompilerVersion="13.0.0.13000029"
+	OSName="macOS"
+	Hostname="iPro-di-Andrea.wind3.hub"
+	OSRelease="11.7"
+	OSVersion="20G817"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="1"
+	ProcessorCacheSize="32768"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="32768"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="3600"
+	>
+	<Testing>
+		<StartDateTime>Oct 29 19:07 CET</StartDateTime>
+		<StartTestTime>1698602877</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 29 19:07 CET</EndDateTime>
+		<EndTestTime>1698602877</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

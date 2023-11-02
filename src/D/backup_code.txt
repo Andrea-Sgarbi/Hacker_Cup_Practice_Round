@@ -1,0 +1,220 @@
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <set>
+
+using namespace std;
+
+typedef struct
+{
+    int e1, e2;
+} edges_struct;
+
+// # template: https://github.com/kamyu104/GoogleCodeJam-Farewell-Rounds/blob/main/Round%20B/railroad_maintenance.py3
+// # reference: https://en.wikipedia.org/wiki/Biconnected_component
+
+int iter_biconnected(vector<int> v)
+{
+}
+
+int iter_biconnected_components(vector<int> graph[])
+{
+    int index_counter = 0;
+    vector<int> index, lowlinks, stack;
+    set<int> stack_set;
+
+    for (auto it = graph[j].begin();
+         it != graph[j].end(); it++)
+    {
+    }
+    // index_counter, index, lowlinks = [0], {}, {}
+    //     stack, stack_set = [], set()
+    //     bccs = []
+    //     for v in range(len(graph)):
+    //         if v not in index:
+    //             iter_biconnect(v, -1)
+    //     return bccs
+
+    return 0;
+}
+
+// def iter_biconnected_components(graph):  # Time: O(|V| + |E|) = O(N + 2N) = O(N), Space: O(|V|) = O(N)
+//     def iter_biconnect(v, p):
+//         stk = [(1, (v, p))]
+//         while stk:
+//             step, args = stk.pop()
+//             if step == 1:
+//                 v, p = args
+//                 index[v] = index_counter[0]
+//                 lowlinks[v] = index_counter[0]
+//                 index_counter[0] += 1
+//                 stack_set.add(v)
+//                 stack.append(v)
+//                 stk.append((4, (v, p)))
+//                 for w in reversed(graph[v]):
+//                     if w == p:
+//                         continue
+//                     stk.append((2, (w, v)))
+//             elif step == 2:
+//                 w, v = args
+//                 if w not in index:
+//                     stk.append((3, (w, v)))
+//                     stk.append((1, (w, v)))
+//                 elif w in stack_set:
+//                     lowlinks[v] = min(lowlinks[v], index[w])
+//             elif step == 3:
+//                 w, v = args
+//                 lowlinks[v] = min(lowlinks[v], lowlinks[w])
+//             elif step == 4:
+//                 v, p = args
+//                 if lowlinks[v] == index[v]:
+//                     biconnected_component = []
+//                     w = None
+//                     while w != v:
+//                         w = stack.pop()
+//                         stack_set.remove(w)
+//                         biconnected_component.append(w)
+//                     bccs.append(set(biconnected_component))
+
+//     index_counter, index, lowlinks = [0], {}, {}
+//     stack, stack_set = [], set()
+//     bccs = []
+//     for v in range(len(graph)):
+//         if v not in index:
+//             iter_biconnect(v, -1)
+//     return bccs
+
+int main()
+{
+
+    int cases;
+
+    ifstream fin("../src/D/sample_input.txt");
+    ofstream fout("../src/D/sample_output.txt", ios::trunc);
+
+    fin >> cases;
+
+    cout << "cases: " << cases << endl;
+
+    for (int i = 0; i < cases; i++)
+    {
+        int N, M;
+        fin >> N >> M;
+
+        edges_struct E[M];
+
+        for (int j = 0; j < M; j++)
+        {
+            fin >> E[j].e1 >> E[j].e2;
+        }
+
+        int Q;
+
+        fin >> Q;
+
+        int a[Q], b[Q];
+
+        for (int j = 0; j < Q; j++)
+        {
+            fin >> a[j] >> b[j];
+        }
+
+        vector<int> graph[N];
+
+        if (i == 0)
+        {
+            cout << "N: " << N << endl;
+            cout << "M: " << M << endl;
+        }
+
+        for (int j = 0; j < M; j++)
+        {
+            if (i == 0)
+            {
+                cout << "iter: " << j << endl;
+                cout << "E[j].e1: " << E[j].e1 << endl;
+                cout << "E[j].e2: " << E[j].e2 << endl;
+                cout << endl;
+            }
+            graph[E[j].e1 - 1].push_back(E[j].e2 - 1);
+            graph[E[j].e2 - 1].push_back(E[j].e1 - 1);
+        }
+
+        if (i == 0)
+        {
+            cout << "graph" << endl;
+            // for (int j = 0; j < M; j++)
+            // {
+            //     // for (int k = 0; k < graph[j].size(); k++)
+            //     //     cout << graph[j].at(k) << " ";
+            //     cout << "size: " << graph[j].size() << endl;
+
+            //     cout << endl;
+            // }
+
+            for (int j = 0; j < N; j++)
+            {
+                cout << "size: " << graph[j].size() << endl;
+                cout << "Elements at index "
+                     << j << ": ";
+
+                // Displaying element at each column,
+                // begin() is the starting iterator,
+                // end() is the ending iterator
+                for (auto it = graph[j].begin();
+                     it != graph[j].end(); it++)
+                {
+
+                    // (*it) is used to get the
+                    // value at iterator is
+                    // pointing
+                    cout << *it << ' ';
+                }
+                cout << endl;
+            }
+        }
+
+        int bccs = 0;
+
+        bccs = iter_biconnected_components(graph);
+    }
+
+    // def road_to_nutella():
+    //     N, M = list(map(int, input().split()))
+    //     edges = [list(map(lambda x: int(x)-1, input().split())) for _ in range(M)]
+    //     Q = int(input())
+    //     queries = [list(map(lambda x: int(x)-1, input().split())) for _ in range(Q)]
+    //     adj = [[] for _ in range(N)]
+    //     for u, v in edges:
+    //         adj[u].append(v)
+    //         adj[v].append(u)
+    //     bccs = iter_biconnected_components(adj)  <---- Continue from here
+    //     lookup = [-1]*N
+    //     for i, bcc in enumerate(bccs):
+    //         for u in bcc:
+    //             lookup[u] = i
+    //     adj2 = [[] for _ in range(len(bccs))]
+    //     for u, v in edges:
+    //         nu, nv = lookup[u], lookup[v]
+    //         if nu == nv:
+    //             continue
+    //         adj2[nu].append(nv)
+    //         adj2[nv].append(nu)
+    //     dist = [[d] for d in find_dist(bccs, adj, adj2)]
+    //     if not dist:
+    //         return -1*len(queries)
+    //     tree_infos = TreeInfos(adj2, cb=partial(calc_dist, dist))
+    //     result = 0
+    //     for a, b in queries:
+    //         u, v = lookup[a], lookup[b]
+    //         lca = tree_infos.lca(u, v)
+    //         result += min(min_dist(dist, tree_infos, u, lca), min_dist(dist, tree_infos, v, lca))
+    //     return result
+
+    // for case in range(int(input())):
+    //     print('Case #%d: %s' % (case+1, road_to_nutella()))
+
+    fin.close();
+    fout.close();
+}
