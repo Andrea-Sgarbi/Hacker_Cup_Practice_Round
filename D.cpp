@@ -3,6 +3,7 @@
 #include <fstream>
 #include <vector>
 #include <set>
+#include <algorithm>
 
 using namespace std;
 
@@ -30,6 +31,10 @@ int iter_biconnected_components(vector<int> graph[])
     for (auto it = graph[j].begin();
          it != graph[j].end(); it++)
     {
+        // Si controlla se l'elemento attuale è gia presente nel vettore index
+        // if (find(index.begin(), index.end(), it) == index.end())
+        // {
+        // }
     }
 
     return 0;
@@ -40,8 +45,8 @@ int main()
 
     int cases;
 
-    ifstream fin("src/D/sample_input.txt");
-    ofstream fout("src/D/sample_output.txt", ios::trunc);
+    ifstream fin("../src/D/sample_input.txt");
+    ofstream fout("../src/D/sample_output.txt", ios::trunc);
 
     fin >> cases;
 

@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round
-BuildDirectory: /Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/build
+SourceDirectory: /Users/Andrea/VSCode Projects/Hacker_Cup_Practice_Round
+BuildDirectory: /Users/Andrea/VSCode Projects/Hacker_Cup_Practice_Round/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: iPro-di-Andrea.wind3.hub
+Site: MBPdiAnaSgarbi5.lan
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-clang++
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/local/bin/cmake" "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round"
-MakeCommand: /opt/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "/usr/local/Cellar/cmake/3.26.3/bin/cmake" "/Users/Andrea/VSCode Projects/Hacker_Cup_Practice_Round"
+MakeCommand: /usr/local/Cellar/cmake/3.26.3/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -64,7 +64,7 @@ UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/clang++
-CompilerVersion: 13.0.0.13000029
+CompilerVersion: 15.0.0.15000040
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

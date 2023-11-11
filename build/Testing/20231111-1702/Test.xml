@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-clang++"
+	BuildStamp="20231111-1702-Experimental"
+	Name="MBPdiAnaSgarbi5.lan"
+	Generator="ctest-3.26.3"
+	CompilerName="/usr/bin/clang++"
+	CompilerVersion="15.0.0.15000040"
+	OSName="macOS"
+	Hostname="MBPdiAnaSgarbi5.lan"
+	OSRelease="14.0"
+	OSVersion="23A344"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="6"
+	ModelID="0"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2048"
+	TotalPhysicalMemory="8192"
+	LogicalProcessorsPerPhysical="8"
+	ProcessorClockFrequency="2400"
+	>
+	<Testing>
+		<StartDateTime>Nov 11 18:14 CET</StartDateTime>
+		<StartTestTime>1699722841</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 11 18:14 CET</EndDateTime>
+		<EndTestTime>1699722841</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

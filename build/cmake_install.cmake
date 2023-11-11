@@ -1,4 +1,4 @@
-# Install script for directory: /Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round
+# Install script for directory: /Users/Andrea/VSCode Projects/Hacker_Cup_Practice_Round
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/andrea/VSCode Projects/Hacker_Cup_Practice_Round/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Andrea/VSCode Projects/Hacker_Cup_Practice_Round/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
